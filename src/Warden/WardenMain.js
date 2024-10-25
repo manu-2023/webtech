@@ -1,23 +1,27 @@
 import './App.css';
-import UpdateProfile from './UpdateProfile';
 import { Link } from 'react-router-dom';
-import MealSelection from './MealSelection';
+
 function WardenMain() {
   return (
-    <div>
-      <div id="controller">
-        <div className='navbar'>
-          <h3 style={{ color: "white" }} className="nav-heading">WELCOME &nbsp; WARDEN</h3>
-          <div className="nav-links">
-            <Link to="/" style={{ color: 'white' }} element={<WardenMain />}></Link>
-            <Link to="/studentAttendance" style={{ color: 'white' }}>Attendance</Link>
-            <Link to="/mealSelection" style={{ color: 'white' }}>Meal Selection</Link>
-            <Link to="/updateprofile" style={{ color: 'white' }}>Profile update</Link>
-            <Link  style={{color:'white'}}>Logout</Link>
-          </div>
+    <>
+    <div id="controller">
+        <div className='navbar' style={{ fontSize: '16px', fontFamily: 'Roboto' }}>
+            <h3 style={{ color: "white", fontSize: '20px' }} className="nav-heading">Welcome</h3>
+            <div className="nav-links">
+                <Link to="/" className="nav-link" element={<WardenMain />}/>
+                <Link to="/studentAttendance" className="nav-link">Attendance</Link>
+                <Link to="/mealSelection" className="nav-link">Meal Selection</Link>
+                <Link to="/updateprofile" className="nav-link">Update Profile</Link>
+                <Link className="nav-link">Logout</Link>
+            </div>
         </div>
-      </div>
     </div>
+
+
+      <div className='foot'>
+        <p>Welcome to our hostel management website, designed to make managing hostels easier and more efficient.</p>
+      </div>
+      </>
   );
 }
 

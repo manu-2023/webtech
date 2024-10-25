@@ -11,7 +11,8 @@ function Routerpage() {
       <WardenMain/>
       <Routes>
         <Route path="/" element={<WardenMain />}/>
-        <Route index path="/studentAttendance" element={<StudentAttendance/>}/>
+        <Route index  element={<StudentAttendance/>}/>
+        <Route index  path="/studentAttendance"  element={<StudentAttendance/>}/>
         <Route path="/updateprofile" element={<UpdateProfile />} />
         <Route path="/mealSelection" element={<MealSelection/>}/>
       </Routes>
