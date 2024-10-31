@@ -1,5 +1,6 @@
 // src/components/Fauth.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 import BarGraph from './BarGraph';
 
 function Fauth() {
@@ -10,19 +11,19 @@ function Fauth() {
     <>
       <div className='fnav'>
         <center>
-          <h3 style={{ marginTop: '1%', color: 'white' }}>WELCOME KITCHEN DEPARTMENT</h3>
+          <p style={{ marginTop: '1%', color: 'white',fontSize:'28px' }}>Welcome  Kitchen Department</p>
+          <h3 style={{marginTop:'470px',color:'white',fontSize:'20px',cursor:'pointer'}} ><u>Logout</u></h3>
         </center>
       </div>
       <center>
-      <h3 style={{marginTop:'5%'}}>Tomorrow's Count is <i>COUNT</i></h3>
+      <h3 style={{marginTop:'5%'}}>Tomorrow's Attendance <i>COUNT</i></h3>
 
       </center>
       <div style={{ width: '80%', margin: '0 auto', marginTop: '20px' }}>
-        <BarGraph data={countData} />
+        <BarGraph data={countData} /> 
       </div>
       <div>
         <center>
-          <button type='submit' className='btn-update' style={{marginRight:'50%',marginTop:'2%'}}>Logout</button>
         </center>
       </div>
       <div className='foot'>

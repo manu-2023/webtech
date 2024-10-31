@@ -1,16 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Routerpage from './Warden/Routerpage';
 import './index.css';
 import WardenMain from './Warden/WardenMain';
 import Fauth from './Food_auth/fauth';
+import Routerpage from './Routerpage';
 import reportWebVitals from './reportWebVitals';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import AdminMain from './Admin/AdminMain';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css' 
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Fauth />
+    <Routerpage  />
   </React.StrictMode>
 );
 

@@ -47,8 +47,7 @@ const BarGraph = ({ data }) => {
 
   return (
     <div style={{height:'80%',width:'50%',marginTop:'5%',marginLeft:'25%'}}>
-          <Bar data={chartData} options={options} />
-    </div>
+          <Bar data={chartData} options={options} />    </div>
   )
 };
 
